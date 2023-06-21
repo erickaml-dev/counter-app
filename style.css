@@ -1,0 +1,142 @@
+:root{
+    --primary: #4638FF;
+    --btn-color: #C3FF00;
+    --background: #F2F2F2;
+    --text-color: #0E0E0E;
+    --divider-color: #EAEAEA;
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h1 {font-size: 2.441rem;}
+
+h2 {font-size: 1.953rem;}
+
+h3 {font-size: 1.563rem;}
+
+h4 {font-size: 1.25rem;}
+
+
+
+.card{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.412);
+    background-color: #FFF;
+    overflow: hidden;
+}
+/* CARD HEADER */
+.card-header{
+    background-color: rgb(69, 56, 255);
+    color: var(--background);
+    background-image: url(./images/parking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 6em 2em;
+    position: relative;
+    line-height: 1.2;
+}
+.title-card{
+    font-size: 2rem;
+}
+.subtitle{
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--btn-color);
+}
+/* CARD MAIN */
+
+.card-main{
+    margin: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main-title{
+    font-weight: 600;
+    border-bottom: 5px solid var(--primary);
+}
+
+#count-el{
+    font-weight: 700;
+    font-size: 1.825rem;
+    background: #bfbebe58;
+    padding: .8em 1.25em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 1.2em 0;
+}
+
+.btn-count{
+    display: flex;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    width: 150px;
+    padding: .5em 0;
+    margin-bottom: 1em;
+    transition: background .5s ease-out;
+    -webkit-transition: background .5s ease-out;
+    -moz-transition: background .5s ease-out;
+    -ms-transition: background .5s ease-out;
+    -o-transition: background .5s ease-out;
+}
+
+@media (min-width: 500px){
+    button{
+        width: 200px;
+    }
+}
+button:hover{
+    background: #b8f000;
+}
+#save-btn{
+    margin-left: .5em;
+}
+
+#save-el{
+    font-weight: 500;
+    font-size: 1.25rem;
+    width: 90%;
+}
+@media (min-width: 500px){
+    #save-el{
+        width: 30%;
+    }
+}
