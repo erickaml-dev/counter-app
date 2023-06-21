@@ -104,6 +104,7 @@ button{
     border: none;
     cursor: pointer;
     background-color: var(--btn-color);
+    color: var(--text-color);
     font-size: 1.25em;
     text-transform: uppercase;
     font-family: 'DM Sans', sans-serif;
