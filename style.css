@@ -96,10 +96,12 @@ h4 {font-size: 1.25rem;}
     -o-border-radius: 8px;
     margin: 1.2em 0;
 }
+/* BUTTONS */
 
 .btn-count{
     display: flex;
 }
+
 button{
     border: none;
     cursor: pointer;
@@ -124,6 +126,7 @@ button{
         width: 200px;
     }
 }
+
 button:hover{
     background: #b8f000;
 }
